@@ -11,3 +11,7 @@ A machine learning-based system to detect network intrusions.
 - Python
 - Scikit-learn
 - Streamlit
+
+## Run
+pip install -r requirements.txt  
+streamlit run app.py
