@@ -6,3 +6,8 @@ A machine learning-based system to detect network intrusions.
 - Detects attacks vs normal traffic
 - Simple ML model (Random Forest)
 - Interactive dashboard
+
+## Tech Stack
+- Python
+- Scikit-learn
+- Streamlit
