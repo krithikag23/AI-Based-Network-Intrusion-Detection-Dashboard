@@ -23,3 +23,18 @@ if st.button("Predict"):
         st.error("⚠️ Intrusion Detected!")
     else:
         st.success("✅ Normal Traffic")
+
+
+st.subheader("📄 Log Analyzer")
+
+log_input = st.text_area("Paste system/network logs here")
+
+if st.button("Analyze Logs"):
+    alerts = detect_suspicious_logs(log_input)
+
+    if alerts:
+        st.error("⚠️ Suspicious Activity Detected!")
+        for alert in alerts:
+            st.write("🚨 " + alert)
+    else:
+        st.success("✅ No suspicious activity found")
