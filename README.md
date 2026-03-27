@@ -7,6 +7,9 @@ A machine learning-based system to detect network intrusions.
 - Detects attacks vs normal traffic
 - Simple ML model (Random Forest)
 - Interactive dashboard
+- Log-based intrusion detection
+- Detects suspicious patterns in logs
+- Simulates SIEM-like behavior
 
 ## Tech Stack
 - Python
