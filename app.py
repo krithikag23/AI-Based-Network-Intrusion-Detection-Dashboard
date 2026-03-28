@@ -40,3 +40,27 @@ if st.button("Analyze Logs"):
             st.write("🚨 " + alert)
     else:
         st.success("✅ No suspicious activity found")
+
+
+import time
+from simulator import generate_traffic
+
+st.subheader("📡 Real-Time Traffic Monitor")
+
+run_simulation = st.checkbox("Start Live Monitoring")
+
+if run_simulation:
+    st.info("Monitoring live traffic...")
+
+    for i in range(10):  # simulate 10 packets
+        sample = generate_traffic()
+        prediction = model.predict(sample)[0]
+
+        st.write(f"Packet {i+1}: {sample.to_dict(orient='records')[0]}")
+
+        if prediction == "attack":
+            st.error("🚨 ALERT: Intrusion Detected!")
+        else:
+            st.success("✅ Normal Traffic")
+
+        time.sleep(1)
