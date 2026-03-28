@@ -10,6 +10,9 @@ A machine learning-based system to detect network intrusions.
 - Log-based intrusion detection
 - Detects suspicious patterns in logs
 - Simulates SIEM-like behavior
+- Real-time traffic simulation
+- Live intrusion detection
+- Continuous monitoring dashboard
 
 ## Tech Stack
 - Python
