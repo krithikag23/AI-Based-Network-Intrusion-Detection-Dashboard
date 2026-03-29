@@ -13,6 +13,9 @@ A machine learning-based system to detect network intrusions.
 - Real-time traffic simulation
 - Live intrusion detection
 - Continuous monitoring dashboard
+- Deep learning-based anomaly detection
+- Autoencoder for detecting unknown attacks
+- Reconstruction error-based alert system
 
 ## Tech Stack
 - Python
