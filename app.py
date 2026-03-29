@@ -64,3 +64,27 @@ if run_simulation:
             st.success("✅ Normal Traffic")
 
         time.sleep(1)
+
+from deep_model import train_autoencoder, detect_anomaly
+import numpy as np
+
+st.subheader("🧠 Deep Learning Anomaly Detection")
+
+# Train on normal data only
+normal_data = np.array([
+    [10, 100, 200],
+    [5, 300, 400],
+])
+
+autoencoder = train_autoencoder(normal_data)
+
+if st.button("Run Deep Detection"):
+    sample = generate_traffic().values
+    is_anomaly, error = detect_anomaly(autoencoder, sample)
+
+    st.write(f"Reconstruction Error: {error:.5f}")
+
+    if is_anomaly:
+        st.error("🚨 Anomaly Detected (Possible Unknown Attack)")
+    else:
+        st.success("✅ Normal Behavior")
