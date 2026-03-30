@@ -88,3 +88,15 @@ if st.button("Run Deep Detection"):
         st.error("🚨 Anomaly Detected (Possible Unknown Attack)")
     else:
         st.success("✅ Normal Behavior")
+
+import matplotlib.pyplot as plt
+
+st.subheader("📊 Traffic Analytics")
+
+if st.button("Generate Analytics"):
+    labels = ["Normal", "Attack"]
+    values = [7, 3]  # simulated counts
+
+    fig, ax = plt.subplots()
+    ax.pie(values, labels=labels, autopct='%1.1f%%')
+    st.pyplot(fig)
