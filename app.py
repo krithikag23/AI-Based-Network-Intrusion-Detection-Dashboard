@@ -100,3 +100,13 @@ if st.button("Generate Analytics"):
     fig, ax = plt.subplots()
     ax.pie(values, labels=labels, autopct='%1.1f%%')
     st.pyplot(fig)
+
+
+st.subheader("📈 Live Stats")
+
+total_packets = 10
+attacks = 3
+
+st.metric("Total Packets", total_packets)
+st.metric("Detected Attacks", attacks)
+st.metric("Safe Traffic", total_packets - attacks)
