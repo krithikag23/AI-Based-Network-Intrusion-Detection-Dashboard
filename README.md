@@ -1,27 +1,28 @@
-# AI-Based-Network-Intrusion-Detection-Dashboard
-
-A machine learning-based system to detect network intrusions.
-
+# AI-Powered Intrusion Detection System
 
 ## Features
-- Detects attacks vs normal traffic
-- Simple ML model (Random Forest)
-- Interactive dashboard
-- Log-based intrusion detection
-- Detects suspicious patterns in logs
-- Simulates SIEM-like behavior
+- Machine Learning-based traffic classification
+- Log-based attack detection
 - Real-time traffic simulation
-- Live intrusion detection
-- Continuous monitoring dashboard
-- Deep learning-based anomaly detection
-- Autoencoder for detecting unknown attacks
-- Reconstruction error-based alert system
+- Deep learning anomaly detection (Autoencoder)
+- Interactive analytics dashboard
 
 ## Tech Stack
 - Python
 - Scikit-learn
+- TensorFlow
 - Streamlit
 
-## Run
+## Highlights
+- Detects known + unknown attacks
+- Simulates real-world IDS behavior
+- Combines rule-based + ML + DL approaches
+
+## Future Scope
+- Integration with Snort
+- Live packet capture
+- Cloud deployment
+
+## Run Locally
 pip install -r requirements.txt  
 streamlit run app.py
