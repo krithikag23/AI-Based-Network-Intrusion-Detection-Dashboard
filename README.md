@@ -6,7 +6,6 @@
 - Real-time traffic simulation
 - Deep learning anomaly detection (Autoencoder)
 - Interactive analytics dashboard
-- Graph Neural Network (GNN) for intrusion detection
 - Models network as graph (nodes = devices, edges = traffic)
 - Detects suspicious relationships and patterns
 
