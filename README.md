@@ -7,7 +7,6 @@
 - Deep learning anomaly detection (Autoencoder)
 - Interactive analytics dashboard
 - Models network as graph (nodes = devices, edges = traffic)
-- Detects suspicious relationships and patterns
 
 ## Tech Stack
 - Python
