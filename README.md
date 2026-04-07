@@ -22,7 +22,6 @@
 ## Future Scope
 - Integration with Snort
 - Live packet capture
-- Cloud deployment
 
 ## Run Locally
 pip install -r requirements.txt  
