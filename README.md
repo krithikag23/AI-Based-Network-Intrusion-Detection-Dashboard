@@ -15,7 +15,7 @@
 - Streamlit
 
 ## Highlights
-- Detects known + unknown attacks
+- Detects known + unknown attacks simultaneously 
 - Simulates real-world IDS behavior
 - Combines rule-based + ML + DL approaches
 
