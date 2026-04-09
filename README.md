@@ -6,7 +6,7 @@
 - Real-time traffic simulation
 - Deep learning anomaly detection (Autoencoder)
 - Interactive analytics dashboard
-- Models network as graph (nodes = devices, edges = traffic)
+
 
 ## Tech Stack
 - Python
